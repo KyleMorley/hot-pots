@@ -6,6 +6,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+###  `npm install`
+
+Downloads the required dependencies
+
+### `npm run server`
+
+Runs the mock server. Please ensure to have json-server installed and configured for this to work. Use this link to see the documentation
+https://www.npmjs.com/package/json-server. 
+
 ### `npm start`
 
 Runs the app in the development mode.\
