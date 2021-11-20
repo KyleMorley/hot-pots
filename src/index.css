@@ -1,13 +1,157 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.content {
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.brand {
+    font-size: 3rem;
+}
+
+h1 {
+    letter-spacing: 3px;
+}
+
+.nav-item {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.content-flex {
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-home {
+    font-size: 46px;
+}
+
+.pot-card {
+    width: 18rem;
+    height: 22rem;
+    margin-top: 22px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pot-card img {
+    height: 200px;
+}
+
+.pot-card img:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.pot-content {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;   
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.pot-auth {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+}
+
+.form-content {
+    width: 100%;
+    height: 100vh;
+    margin-top: 100px;
+}
+
+.pots-about {
+    height: 100vh;
+}
+
+.pot-form {
+    height: 100vh;
+    margin-top: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: #000;
+    opacity: 0.8;
+}
+
+.btn {
+    text-decoration: none;
+    color: #000;
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    max-width: 500px;
+    max-height: 400px;
+    margin: 2rem;
+    overflow-y: scroll;
+}
+
+.modal-close-top {
+    color: #FF0000;
+    font-size: 22px;
+}
+
+.modal-close-top:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.modal-img {
+    height: 300px;
+    border-radius: 2px;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 770px) {
+    .pot-content {
+        justify-content: center;
+    }
 }
