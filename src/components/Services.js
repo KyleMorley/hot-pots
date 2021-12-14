@@ -19,7 +19,7 @@ const Services = () => {
         };
 
         getPots()
-    }, [])
+    }, [pots])
 
     const fetchPots = async () => {
         const res = await fetch('http://localhost:4000/pots');
